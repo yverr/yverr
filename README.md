@@ -11,20 +11,20 @@ Currently studying Computer Science.
 
 ---
 
-## 🛠️ Languages and Tools
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=python,java,cs,git,github,vscode,unity" />
-</p>
-
----
-
 ## 📚 Currently Working On
 
 - Learning machine learning fundamentals
 - Building small ML projects
 - Studying statistics and mathematics for ML
 - Improving my programming fundamentals
+
+---
+
+## 🛠️ Languages and Tools
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,java,cs,git,github,vscode,unity" />
+</p>
 
 ---
 
