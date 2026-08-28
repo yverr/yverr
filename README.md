@@ -1,26 +1,25 @@
 # Hi 👋, I'm Rylle
 
-### A Computer Science student interested in Software Development, Data Science, and Machine Learning
+**Computer Science student interested in Software Development, Data Science, and Machine Learning.**
 
----
+I'm currently learning Python, Statistics, and Machine Learning.
 
-I'm currently learning **Python, Statistics, and Machine Learning**
+I'm particularly interested in applying Machine Learning and Data Science to
+medicine and education.
 
-Interested in Machine Learning and Data Science applied to **medicine and education**
-
-Currently studying **Computer Science**
+Currently studying Computer Science.
 
 ---
 
 ## 🛠️ Languages and Tools
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,java,cs,git,github,vscode,numpy,pandas,unity" />
+  <img src="https://skillicons.dev/icons?i=python,java,cs,git,github,vscode,unity" />
 </p>
 
 ---
 
-## Currently working on
+## 📚 Currently Working On
 
 - Learning machine learning fundamentals
 - Building small ML projects
