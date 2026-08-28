@@ -4,9 +4,9 @@
 
 ---
 
- I'm currently learning **Python, Statistics, and Machine Learning**
+I'm currently learning **Python, Statistics, and Machine Learning**
 
- Interested in Machine Learning and Data Science involved in medicine and education
+Interested in Machine Learning and Data Science applied to **medicine and education**
 
 Currently studying **Computer Science**
 
@@ -15,7 +15,7 @@ Currently studying **Computer Science**
 ## 🛠️ Languages and Tools
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,java,C#,git,github,vscode,numpy,pandas,unity" />
+  <img src="https://skillicons.dev/icons?i=python,java,cs,git,github,vscode,numpy,pandas,unity" />
 </p>
 
 ---
@@ -29,4 +29,4 @@ Currently studying **Computer Science**
 
 ---
 
-> Still learning. Still building!
+> Still learning. Still building <3
