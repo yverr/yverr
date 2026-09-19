@@ -1,4 +1,4 @@
-# Hi 👋, I'm Rylle
+# Helloo, I'm Rylle!
 
 **Computer Science student | Software Development • Data Science • Machine Learning**
 
@@ -8,7 +8,7 @@ I'm especially interested in how data and AI can be applied to **medicine and ed
 
 ---
 
-## 📚 Currently Working On
+## Currently Working On...
 
 - Machine learning fundamentals
 - Statistics and mathematics for ML
@@ -17,7 +17,7 @@ I'm especially interested in how data and AI can be applied to **medicine and ed
 
 ---
 
-## 🛠️ Languages and Tools
+## My Languages and Tools:
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=python,java,cs,git,vscode,unity" />
