@@ -38,7 +38,7 @@ body {
 .container p {
     margin-bottom: 20px;
 
-    font-size: 14px;
+    font-size: 10px;
 }
 
 
@@ -63,7 +63,7 @@ body {
     margin-bottom: 28px;
 
     font-family: monospace;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 
@@ -92,7 +92,7 @@ main {
 
 .back {
     font-family: monospace;
-    font-size: 15px;
+    font-size: 10px;
     width: 50px;
     padding-top: 25px;
     padding-left: 70px;
@@ -110,15 +110,12 @@ article {
     margin-left: 100px;
     margin-top: 45px;
 
-    font-size: 18px;
+    font-size: 14px;
 
     line-height: 1.6;
 }
 
 
-/* =========================
-   HEADINGS
-   ========================= */
 
 h1 {
     font-size: 32px;
@@ -138,9 +135,6 @@ h2 {
 }
 
 
-/* =========================
-   HORIZONTAL LINES
-   ========================= */
 
 article hr {
     border: none;
@@ -151,27 +145,18 @@ article hr {
 }
 
 
-/* =========================
-   PARAGRAPHS
-   ========================= */
 
 article p {
     margin: 10px 0;
 }
 
 
-/* =========================
-   NORMAL LISTS
-   ========================= */
 
 article ul {
     padding-left: 20px;
 }
 
 
-/* =========================
-   FUNCTIONS
-   ========================= */
 
 .functions {
     list-style: none;
@@ -185,5 +170,5 @@ article ul {
     margin-bottom: 20px;
 
     font-family: monospace;
-    font-size: 17px;
+    font-size: 14px;
 }
