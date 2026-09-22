@@ -1,7 +1,7 @@
 # Rylle
 
 <p align="center">
-<img src="assets/homura.jpg" width="500">
+<img src="assets/homura.jpg" width="1000">
 </p>
 
 # About
