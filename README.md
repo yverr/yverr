@@ -2,13 +2,9 @@
 <img src="assets/homura_1.jpg" width="1000">
 </p>
 
-# About
+## About
 
-**Computer Science student | Software Development • Data Science • Machine Learning**
-
-I'm currently exploring machine learning through programming, statistics, and small projects.
-
-I'm especially interested in how data and AI can be applied to **medicine and education**.
+com sci student, data science & ML enthusiast(specifically applied medicine and education) mostly doing projects for learning or school projects currently
 
 ---
 
