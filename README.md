@@ -7,7 +7,6 @@
 com sci student, data science & ML enthusiast(specifically applied medicine and education) mostly doing projects for learning or school projects currently
 
 [![Email](https://img.shields.io/badge/Email-cliocallii%40gmail.com-555?style=flat-square&logo=gmail&logoColor=red)](mailto:cliocallii@gmail.com)
----
 
 ## Currently Working On...
 
