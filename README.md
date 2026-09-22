@@ -1,5 +1,3 @@
-# Rylle
-
 <p align="center">
 <img src="assets/homura_1.jpg" width="1000">
 </p>
