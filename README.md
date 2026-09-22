@@ -1,5 +1,5 @@
 <p align="center">
-<img src="assets/flowers.jpg" width="1000">
+<img src="assets/homura_1.jpg" width="1000">
 </p>
 
 ## About
