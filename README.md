@@ -1,4 +1,10 @@
-# Helloo, I'm Rylle!
+# Rylle
+
+<p align="center">
+<img src="assets/homura.jpg" width="500">
+</p>
+
+# About
 
 **Computer Science student | Software Development • Data Science • Machine Learning**
 
