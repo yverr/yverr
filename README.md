@@ -17,7 +17,7 @@ com sci student, data science & ML enthusiast(specifically applied medicine and 
 ## My Languages and Tools:
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,java,cs,git,vscode,unity" />
+  <img src="https://skillicons.dev/icons?i=python,java,cs,git,unity" />
 </p>
 
 > Still learning. Still building <3
