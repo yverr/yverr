@@ -11,6 +11,7 @@ com sci student, data science & ML enthusiast(specifically applied medicine and 
 ## Currently Working On...
 
 - Machine learning fundamentals, statistics and mathematics for ML, and data analysis with Python
+- python projects for school
 
 ---
 
