@@ -6,14 +6,16 @@ var READING = [
         type: 'paper',
         title: 'Machine learning in medicine: a practical introduction',
         author: 'Jenni A. M. Sidey-Gibbons & Chris J. Sidey-Gibbons',
-        url: 'https://doi.org/10.1186/s12874-019-0681-4'
+        url: 'https://doi.org/10.1186/s12874-019-0681-4',
+        
     },
     {
         date: '2026/08',
         type: 'book',
         title: 'An Introduction to Statistical Learning',
         author: 'G. James et al.',
-        url: 'https://www.statlearning.com/'
+        url: 'https://www.statlearning.com/',
+        review: 'A good book! Very helpful and gives a deeper understanding of the underlying world of statistics and data in machine learning. Kudos!!'
     }
 ];
 
@@ -34,6 +36,13 @@ var READING = [
         return link;
     }
 
+    function reviewNode(item) {
+        var box = make('details', 'review');
+        box.appendChild(make('summary', '', 'My review'));
+        box.appendChild(make('p', '', item.review));
+        return box;
+    }
+
     function fillEntry(parent, item) {
         parent.appendChild(make('span', 'dot ' + item.type));
         parent.appendChild(titleNode(item));
@@ -48,6 +57,7 @@ var READING = [
             time.dateTime = item.date.replace(/\//g, '-');
             var entry = make('span');
             fillEntry(entry, item);
+            if (item.review) entry.appendChild(reviewNode(item));
             row.appendChild(time);
             row.appendChild(entry);
             fullList.appendChild(row);

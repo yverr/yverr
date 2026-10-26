@@ -334,6 +334,43 @@ mark {
     font-style: italic;
 }
 
+.review {
+    margin: 0.35rem 0 0 1.05rem;
+}
+
+.review summary {
+    width: fit-content;
+    color: var(--muted);
+    font-size: 0.85rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.review summary::-webkit-details-marker {
+    display: none;
+}
+
+.review summary::after {
+    content: '+';
+    margin-left: 0.4em;
+}
+
+.review[open] summary::after {
+    content: '\2212';
+}
+
+.review summary:hover {
+    color: var(--text);
+}
+
+.review p {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 0.90rem;
+    line-height: 1.6;
+    color: var(--post-text);
+    animation: fade-up 0.35s ease-out both;
+}
+
 @media (max-width: 520px) {
     .posts li {
         grid-template-columns: 1fr;
