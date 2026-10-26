@@ -21,4 +21,4 @@ com sci student, data science & ML enthusiast(specifically applied medicine and 
   <img src="https://skillicons.dev/icons?i=python,java,cs,html,css,git,unity,tensorflow" />
 </p>
 
-> Still learning. Still building <3
+> Still learning, Still building <3
