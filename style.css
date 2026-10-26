@@ -7,9 +7,9 @@
     --hover: #a1a1a8;
     --mark: #fef3b0;
     --mark-text: #1a1a1a;
-    --dot-technical: #5b8def;
-    --dot-reflection: #e3b21d;
-    --dot-article: #4fa878;
+    --dot-technical: #a4bae5;
+    --dot-reflection: #fbe298;
+    --dot-article: #b2f8c0;
     --post-text: #3d3d3d;
     --particle: 95, 95, 110;
     --sidebar-w: 230px;
@@ -25,9 +25,9 @@
     --hover: #6f7076;
     --mark: #4a4219;
     --mark-text: #f3ecc4;
-    --dot-technical: #7aa5ff;
-    --dot-reflection: #e8c04a;
-    --dot-article: #6cc795;
+    --dot-technical: #a4bae5;
+    --dot-reflection:  #fbe298;
+    --dot-article: #b2f8c0;
     --post-text: #cdcdc9;
     --particle: 150, 150, 165;
     color-scheme: dark;
