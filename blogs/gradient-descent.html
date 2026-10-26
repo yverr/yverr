@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>From 9 to 95: My Gradient Descent in Mathematics | Rylle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="../stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <script>
+        (function () {
+            var root = document.documentElement;
+            try {
+                var theme = localStorage.getItem('theme');
+                if (!theme) theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                root.dataset.theme = theme;
+                if (window.innerWidth <= 800 || localStorage.getItem('sidebar') === 'closed') {
+                    root.classList.add('sidebar-closed');
+                }
+            } catch (e) {}
+        })();
+    </script>
+</head>
+
+<body>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Toggle sidebar" aria-controls="sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+    </button>
+
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="../index.html">yverr</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../blogs.html" aria-current="page">Blogs</a>
+            <a href="../projects.html">Projects</a>
+        </nav>
+    </aside>
+
+    <div class="backdrop" id="backdrop"></div>
+
+    <main class="content">
+        <article class="column post">
+
+            <div class="post-meta">
+                <time datetime="2026-10-26">2026/10/26</time>
+                <span><span class="dot reflection"></span>Reflection</span>
+            </div>
+
+            <h1>From 9 to 95: My Gradient Descent in Mathematics</h1>
+
+            <p>Math has always been an interesting subject to me. Or perhaps that's just what I used to tell myself. I liked the idea of being good at it, but I rarely put that interest into practice. I had my strengths, of course, but fractions and percentages were my greatest weakness. Pathetically, I could barely solve a math problem if either of them appeared. To the version of myself today, this is genuinely a disaster, but it also made me realize something about myself. How could someone who struggled with fractions eventually grow confident enough to study calculus on their own?</p>
+
+            <p>It took an entrance examination, an embarrassingly low score, and a considerable amount of regret for me to begin finding out.</p>
+
+
+
+            <p>The examination was for one of the country's top universities. Honestly, I didn't think much of myself back then. I expected to fail, and I had little ambition beyond giving the examination a try. When I registered, I treated it as something to do for fun. I didn't expect that simply stepping onto the university's campus would leave me questioning how little I had done with my time.</p>
+
+            <p>The campus was beautiful, not merely in appearance but in what it represented. Greenery stretched across its grounds, and the university was so enormous that some students had to take a ride just to get to their next class. Ridiculous, right? Its facilities were equally impressive. Even with my rather unimpressive academic habits at the time, I couldn't help being amazed—and, admittedly, envious.</p>
+
+            <p>Every step seemed to remind me of something I hadn't considered seriously enough. I wanted to be part of an academic environment like this, yet I had done so little to prepare myself for it. Had I really come all this way just for fun?</p>
+
+            <p>The examination hadn't even begun, and yet I was already regretting my choices. But regret is a peculiar thing. It can tell you that something matters to you, yet it cannot undo the time you've spent neglecting it. And who was there to blame for my lack of preparation? I couldn't very well blame the university, just myself.</p>
+
+            <p>And the result? Of course—I failed miserably. I received a score of 5 out of 100 in mathematics.</p>
+
+            <p>Truly a dark academic history worth dying over. One I would rather not bring up at family gatherings, nor would I even tell it to my most close friends. The scoring system was different from what I was accustomed to, with mistakes carrying consequences beyond the individual questions, but that doesn't make the result any less humbling.</p>
+
+            <p>I wouldn't learn my score until almost a year later. By then, however, I was no longer quite the same person who had walked into that examination hall..</p>
+
+            <p>What changed between that version of me and the student who now feels confident in calculus?</p>
+
+            <p>The examination had forced me to confront a rather very uncomfortable realization: I couldn't keep claiming an interest in mathematics without making an effort to understand it. I had spent so much time being vaguely interested in the subject that I had neglected to discover just how much I didn't know.</p>
+
+            <p>So then, I began studying. I took a pencil and a stack of blank sheets of paper, listed the mathematics topics in the high-school curriculum, and started working through them from beginning to end. The blank pages gradually filled with calculations, explanations, and mistakes. Topics I had once avoided became things I had to sit with until I understood them. It wasn't glamorous, and I certainly didn't become good at mathematics overnight. But for the first time, I felt that I had a direction.</p>
+
+
+            <p>That examination, as painful as it had been, had given me something I hadn't possessed before: a clearer understanding of what I lacked and what I needed to learn. I couldn't change the score, but I could change what I did with the information it gave me..</p>
+
+            <p>Then, before I quite realized how much time had passed, another university entrance examination came around.</p>
+
+            <p>This time, I had a better idea of what I wanted from myself. The university was another well-regarded public institution, but the nearby branch where I took the examination didn't offer computer science. But of course, I had no intention of abandoning my chosen field for another course. Computer science was what I wanted, and I wasn't looking for a plan B.</p>
+
+            <p>So why take the examination at all?</p>
+
+
+            <p>I wanted to test myself. I wanted to know how much I had improved, which mistakes I would still make, and what I needed to work on next. Passing would be nice, naturally, but I was also curious about the distance between the person who had once struggled with fractions and the person sitting for the examination now.</p>
+
+            <p>In a way, I had begun treating my own learning as an iterative process.</p>
+
+            <p>This is where I find myself thinking about gradient descent, an optimization algorithm used in machine learning. A model begins with parameters that may not produce the desired result. By using gradient information to update those parameters, it can gradually reduce its error. The process repeats: evaluate, adjust, evaluate again.</p>
+
+            <p>My experience wasn't literally gradient descent, of course. Human learning is considerably messier than an optimization algorithm. Still, I find something familiar in the underlying idea. I had encountered a result I wasn't satisfied with, identified gaps in my knowledge, changed how I studied, and tested myself again. Each attempt gave me more information to work with.</p>
+
+            <p>And this time, I passed. Honestly, it was kind of a reassuring result, but I knew that wasn't a signal for me stop there. Passing an entrance examination didn't mean I had mastered mathematics, just as receiving a poor score hadn't meant I was incapable of learning it. There were still concepts I didn't understand and mistakes I hadn't learned to avoid.</p>
+
+            <p>So I kept going. Before university classes even began, I was already studying calculus, linear algebra, and probability and statistics on my own.</p>
+
+            <p>I sometimes think about that score of 5 out of 100 and wonder what would have happened if I had never taken that examination. Perhaps I would have continued to regard mathematics as an interesting subject without ever discovering how much I could learn from it. Perhaps I would have found my way here eventually, through a different experience entirely. I can't know for certain.</p>
+
+            <p>What I do know is that my old score told me what I could do at that particular moment. It didn't tell me what I would be able to do a year later.</p>
+
+            <p>Going from 5 to 95 wasn't a single leap, nor was it the result of suddenly discovering some hidden talent. It was a succession of smaller steps: recognizing what I didn't know, returning to the foundations, making mistakes, and trying again with a better understanding of where I stood.</p>
+
+            <p>I sometimes wonder what the student who received that score of 5 out of 100 would think if she could see me now, studying probability and statistics out of curiosity rather than obligation. Perhaps she would be surprised. I know I would have been!</p>
+
+            <p>I still have much to learn, and I doubt there will ever be a point when I can confidently say that I have learned enough. But I feel that mathematics no longer feels like a subject I am merely interested in from a distance. It is becoming something that I am willing to struggle with, question, and return to until I understand it a little better.</p>
+
+            <p>At this point, perhaps I can safely conclude that my greatest improvement was never reflected in a score, I improved far more than just that.</p>
+
+            <a class="back" href="../blogs.html">Back to all blogs</a>
+        </article>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
