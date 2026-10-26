@@ -46,6 +46,7 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="blogs.html" aria-current="page">Blogs</a>
+            <a href="reading.html">Reading</a>
             <a href="projects.html">Projects</a>
         </nav>
     </aside>
@@ -53,28 +54,33 @@
     <div class="backdrop" id="backdrop"></div>
 
     <main class="content">
-        <div class="column">
-            <h1>My Blogs</h1>
+        <div class="blog-layout">
+            <div class="column">
+                <h1>My Blogs</h1>
 
-            <p class="legend">
-                <span><span class="dot technical"></span>Technical</span>
-                <span><span class="dot reflection"></span>Reflection</span>
-                <span><span class="dot article"></span>Article</span>
-            </p>
+                <p class="legend">
+                    <span><span class="dot technical"></span>Technical</span>
+                    <span><span class="dot reflection"></span>Reflection</span>
+                    <span><span class="dot article"></span>Article</span>
+                </p>
 
-                        <ul class="posts">
-                <li>
-                    <time datetime="2026-10-26">2026/10/26</time>
-                    <a href="#"><span class="dot reflection"></span><mark>Do Neural Networks Dream of Strictly Convex Sheeps?</mark></a>
-                </li>
-                <li>
-                    <time datetime="2026-10-26">2026/10/26</time>
-                    <a href="blogs/gradient-descent.html"><span class="dot reflection"></span><mark>From 9 to 95: My Gradient Descent in Mathematics</mark></a>
-                </li>
-            </ul>
+                <ul class="posts">
+                    <li>
+                        <time datetime="2026-10-26">2026/10/26</time>
+                        <a href="blogs/gradient-descent.html"><span class="dot reflection"></span><mark>From 5 to 95: My Gradient Descent in Mathematics</mark></a>
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="recent">
+                <h2>Recently read</h2>
+                <ul id="recent-list"></ul>
+                <a class="more" href="reading.html">More</a>
+            </aside>
         </div>
     </main>
 
     <script src="script.js"></script>
+    <script src="reading.js"></script>
 </body>
 </html>

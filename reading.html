@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reading | Rylle</title>
+
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var root = document.documentElement;
+            try {
+                var theme = localStorage.getItem('theme');
+                if (!theme) theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                root.dataset.theme = theme;
+                if (window.innerWidth <= 800 || localStorage.getItem('sidebar') === 'closed') {
+                    root.classList.add('sidebar-closed');
+                }
+            } catch (e) {}
+        })();
+    </script>
+</head>
+
+<body>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Toggle sidebar" aria-controls="sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+    </button>
+
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="index.html">yverr</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="reading.html" aria-current="page">Reading</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </aside>
+
+    <div class="backdrop" id="backdrop"></div>
+
+    <main class="content">
+        <div class="column">
+            <h1>Reading</h1>
+
+            <p class="legend">
+                <span><span class="dot paper"></span>Paper</span>
+                <span><span class="dot book"></span>Book</span>
+            </p>
+
+            <ul class="posts" id="reading-list"></ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="reading.js"></script>
+</body>
+</html>
