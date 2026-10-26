@@ -1,68 +1,78 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rylle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var root = document.documentElement;
+            try {
+                var theme = localStorage.getItem('theme');
+                if (!theme) theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                root.dataset.theme = theme;
+                if (window.innerWidth <= 800 || localStorage.getItem('sidebar') === 'closed') {
+                    root.classList.add('sidebar-closed');
+                }
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
 <body>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Toggle sidebar" aria-controls="sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+    </button>
 
-    <div class="sidebar">
-        <div class="container">
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/>
+        </svg>
+    </button>
 
-            <p><a href="index.html">yverr</a></p>
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="index.html">yverr</a>
+        <nav>
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </aside>
 
-            <hr>
+    <div class="backdrop" id="backdrop"></div>
 
-            <ul class="list">
-                <li><a href="index.html"><b>Home</b></a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
 
-        </div>
-    </div>
-
-
-    <div class="main">
-
-        <div id="particle-canvas"></div>
-
-        <div class="greet">
-            <h2>Hello!</h2>
+    <main class="content">
+        <div class="column">
+            <h1>Hello!</h1>
 
             <p>
-                I'm rylle, a computer science student who's deeply interested
+                I’m rylle, a computer science student who’s deeply interested
                 in data science and machine learning!
             </p>
 
-            <p style="font-size: 15px;">
-                This is a random website (not a professional portfolio).
-            </p>
+            <p class="small">This is a random website (not a professional portfolio).</p>
 
-            <p style="font-size: 15px;">• <a href="https://github.com/yverr" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Github</a> • <a href="https://www.kaggle.com/karylleverdadero" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Kaggle</a></p>
+            <ul class="home-links small">
+                <li><a href="https://github.com/yverr" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="https://www.kaggle.com/karylleverdadero" target="_blank" rel="noopener noreferrer">Kaggle</a></li>
+            </ul>
         </div>
+    </main>
 
-    </div>
-
-
-    <script src="particle-network.min.js"></script>
-
-    <script>
-        var canvasDiv = document.getElementById('particle-canvas');
-
-        var options = {
-            particleColor: '#dddddd',
-            background: '#ffffff',
-            interactive: true,
-            speed: 'slow',
-            density: 'low'
-        };
-
-        var particleCanvas = new ParticleNetwork(canvasDiv, options);
-    </script>
-
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
 </body>
-
 </html>

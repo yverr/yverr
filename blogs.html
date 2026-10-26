@@ -1,42 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Rylle</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blogs | Rylle</title>
 
-        <div class="sidebar">
-            <div class="container">
-                <p><a href="index.html">yverr</a></p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
-                <hr>
+    <link rel="stylesheet" href="style.css">
 
-                <ul class = "list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blogs.html"><b>blogs</b></a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </div>
-            
-        </div>
+    <script>
+        (function () {
+            var root = document.documentElement;
+            try {
+                var theme = localStorage.getItem('theme');
+                if (!theme) theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                root.dataset.theme = theme;
+                if (window.innerWidth <= 800 || localStorage.getItem('sidebar') === 'closed') {
+                    root.classList.add('sidebar-closed');
+                }
+            } catch (e) {}
+        })();
+    </script>
+</head>
+
+<body>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Toggle sidebar" aria-controls="sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+    </button>
+
+    <button class="icon-btn theme-btn" id="theme-btn" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="index.html">yverr</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blogs.html" aria-current="page">Blogs</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </aside>
+
+    <div class="backdrop" id="backdrop"></div>
+
+    <main class="content">
+        <div class="column">
+            <h1>My Blogs</h1>
+
+            <p class="legend">
+                <span><span class="dot technical"></span>Technical</span>
+                <span><span class="dot reflection"></span>Reflection</span>
+            </p>
+
         
-        
-        <div class="notes">
-            <div class="n1">
-                <h2>My Blogs</h2>
-                <p>🔷 Technical  🟡 Reflection </p>
-                <ul>
-                    <li><a>2026/10/26 - <y_mark>From 9 to 95: My Gradient Descent in Mathematics</y_mark></a></li>
-                    <li><a>- </a></li>
-                    <li><a>- </a></li>
-                    <li><a>- </a></li>
-                </ul>
-            </div>
+            <ul class="posts">
+                <li>
+                    <time datetime="2026-10-26">2026/10/26</time>
+                    <a href="#"><span class="dot reflection"></span><mark>From 9 to 95: My Gradient Descent in Mathematics</mark></a>
+                </li>
+            </ul>
         </div>
-            
-            
+    </main>
 
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
