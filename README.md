@@ -6,7 +6,8 @@
 
 com sci student, data science & ML enthusiast(specifically applied medicine and education) mostly doing projects for learning or school projects currently
 
-My live website: [Visit my website!](https://yverr.github.io/yverr/)
+Checkout my website: [Visit my website here!](https://yverr.github.io/yverr/)
+
 [![Email](https://img.shields.io/badge/Email-cliocallii%40gmail.com-555?style=flat-square&logo=gmail&logoColor=red)](mailto:cliocallii@gmail.com)
 
 ## Currently Working On...
