@@ -215,7 +215,7 @@ a:hover {
     width: 0.6em;
     height: 0.6em;
     margin-right: 0.45em;
-    border-radius: 50%;
+    border-radius: 0;
 }
 
 .dot.technical  { background: var(--dot-technical); }
