@@ -161,6 +161,8 @@ a:hover {
     min-height: 100vh;
     margin-left: var(--sidebar-w);
     padding: 96px clamp(24px, 7vw, 96px) 80px;
+    container-type: inline-size;
+    container-name: content;
 }
 
 .sidebar-closed .content {
@@ -325,11 +327,11 @@ mark {
     padding: 0.05em 0.25em;
     border-radius: 3px;
 }
- 
+
 mark.technical {
     background: var(--mark-technical);
 }
- 
+
 mark.article {
     background: var(--mark-article);
 }
@@ -503,6 +505,82 @@ mark.article {
     color: var(--muted);
 }
 
+.post-layout {
+    display: block;
+}
+
+.toc {
+    display: none;
+    animation: fade-up 0.6s ease-out 0.3s both;
+}
+
+.toc-title {
+    margin-bottom: 0.9rem;
+    color: var(--muted);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 1px solid var(--line);
+}
+
+.toc a {
+    display: block;
+    margin-left: -1px;
+    padding: 0.25rem 0 0.25rem 0.9rem;
+    border-left: 1px solid transparent;
+    color: var(--muted);
+    font-size: 1.0rem;
+    line-height: 1.4;
+}
+
+.toc .sub a {
+    padding-left: 1.7rem;
+}
+
+.toc a:hover {
+    color: var(--text);
+}
+
+.toc a.active {
+    color: var(--text);
+    border-left-color: var(--text);
+}
+
+.post h2,
+.post h3 {
+    scroll-margin-top: 5rem;
+}
+
+@container content (min-width: 78rem) {
+    .post-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 50rem) minmax(0, 1fr);
+        column-gap: 2rem;
+    }
+
+    .post-layout .post {
+        grid-column: 2;
+    }
+
+    .toc {
+        display: block;
+        grid-column: 3;
+        grid-row: 1;
+        position: sticky;
+        top: 6rem;
+        align-self: start;
+        width: 15rem;
+        max-height: calc(100vh - 8rem);
+        overflow-y: auto;
+    }
+}
+
 .back {
     display: inline-block;
     margin-top: 2.5rem;
@@ -560,7 +638,14 @@ mark.article {
     }
 
     .column > *,
-    .recent {
+    .recent,
+    .toc {
         animation: none;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
     }
 }
