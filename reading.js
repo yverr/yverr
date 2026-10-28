@@ -4,10 +4,18 @@ var READING = [
     {
         date: '2026/10',
         type: 'paper',
+        title: 'Discovering temporal regularities in retail customers’ shopping behavior',
+        author: 'R. Guidotti et al.',
+        url: 'https://doi.org/10.1140/epjds/s13688-018-0133-0',
+        
+    },
+    {
+        date: '2026/10',
+        type: 'paper',
         title: 'Machine learning in medicine: a practical introduction',
         author: 'Jenni A. M. Sidey-Gibbons & Chris J. Sidey-Gibbons',
         url: 'https://doi.org/10.1186/s12874-019-0681-4',
-        
+        review: 'Thumbs up. However it prompts me a question on the distinction between performing well on a dataset and being ready for clinical use...!'
     },
     {
         date: '2026/08',
