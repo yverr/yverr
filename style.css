@@ -7,6 +7,8 @@
     --hover: #a1a1a8;
     --mark: #fef3b0;
     --mark-text: #1a1a1a;
+    --mark-technical: #dbe7ff;
+    --mark-article: #cdf7e0;
     --dot-technical: #b0c9ff;
     --dot-reflection: #fceab3;
     --dot-article: #8afebe;
@@ -25,6 +27,8 @@
     --hover: #6f7076;
     --mark: #4a4219;
     --mark-text: #f3ecc4;
+    --mark-technical: #26344f;
+    --mark-article: #1f4a35;
     --dot-technical: #b0c9ff;
     --dot-reflection: #fceab3;
     --dot-article: #8afebe;
@@ -320,6 +324,14 @@ mark {
     font-weight: 500;
     padding: 0.05em 0.25em;
     border-radius: 3px;
+}
+ 
+mark.technical {
+    background: var(--mark-technical);
+}
+ 
+mark.article {
+    background: var(--mark-article);
 }
 
 .projects li {

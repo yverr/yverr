@@ -3,6 +3,14 @@ var RECENT_COUNT = 3;
 var READING = [
     {
         date: '2026/10',
+        type: 'book',
+        title: 'The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places',
+        author: 'Byron Reeves & Clifford Nass',
+        url: 'https://www.researchgate.net/publication/37705092_The_Media_Equation_How_People_Treat_Computers_Television_and_New_Media_Like_Real_People_and_Pla',
+        
+    },
+    {
+        date: '2026/10',
         type: 'paper',
         title: 'Discovering temporal regularities in retail customers’ shopping behavior',
         author: 'R. Guidotti et al.',
