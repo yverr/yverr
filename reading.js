@@ -32,6 +32,20 @@ var READING = [
         author: 'G. James et al.',
         url: 'https://www.statlearning.com/',
         review: 'A good book! Very helpful and gives a deeper understanding of the underlying world of statistics and data in machine learning. Kudos!!'
+    },
+    {
+        date: '2026/08',
+        type: 'book',
+        title: 'Deep Learning',
+        author: 'Ian Goodfellow and Yoshua Bengio and Aaron Courville',
+        url: 'https://www.deeplearningbook.org/',
+    },
+    {
+        date: '2026/05',
+        type: 'book',
+        title: 'Automate the Boring Stuff with Python',
+        author: ' Al Sweigart',
+        url: 'https://automatetheboringstuff.com/',
     }
 ];
 
