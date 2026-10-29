@@ -4,9 +4,9 @@ var READING = [
     {
         date: '2026/10',
         type: 'book',
-        title: 'The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places',
-        author: 'Byron Reeves & Clifford Nass',
-        url: 'https://www.researchgate.net/publication/37705092_The_Media_Equation_How_People_Treat_Computers_Television_and_New_Media_Like_Real_People_and_Pla',
+        title: 'Our Mathematical Universe: My Quest for the Ultimate Nature of Reality',
+        author: 'Max Tegmark',
+        url: 'https://www.goodreads.com/book/show/19395553-our-mathematical-universe',
         
     },
     {
